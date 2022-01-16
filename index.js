@@ -37,4 +37,5 @@ app.post("/send", (req, res) => {
 
 });
 
-app.listen(port, () => console.log(`Running on port ${port}!`));
+app.listen(process.env.PORT || port, () => console.log(`Running on port ${port}!`));
+
