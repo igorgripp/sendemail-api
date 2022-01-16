@@ -16,6 +16,7 @@
   "author": "Igor Gripp",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^12.0.4",
     "express": "^4.17.2",
     "nodemailer": "^6.7.2",
