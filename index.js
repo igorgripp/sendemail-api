@@ -10,6 +10,9 @@ const port = 3000;
 const user = process.env.EMAIL_USER;
 const pass = process.env.EMAIL_PASSWORD;
 
+app.get("/", (req, res) => {
+  res.send('Welcome to API sendMail'); 
+})
 
 app.post("/send", (req, res) => {
 
