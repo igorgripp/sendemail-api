@@ -29,9 +29,11 @@ app.post("/send", (req, res) => {
   transporter.sendMail({
     from: user,
     to: user,
-    replyTo: email.from,
+    replyTo: email.youremail,
     subject: email.subject,
-    text: email.message
+    text: 'Cliente: ' + email.yourname + 
+          '\nTelefone: ' + email.yourphone +
+          '\nMensagem: ' + email.message,
   }).then(info => {
     res.send(info);
   }).catch(err => {
