@@ -6,7 +6,7 @@ module.exports = () => {
   const app = express();
 
   app.use(cors({
-    origin: "https://www.igfullstack.com.br"
+    // origin: "https://www.igfullstack.com.br"
   }));
   app.use(bodyParser.urlencoded({ extended: true }));
   app.use(bodyParser.json());
