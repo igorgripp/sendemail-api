@@ -4,10 +4,10 @@ const cors = require("cors");
 
 module.exports = () => {
   const app = express();
-  
+
   app.use(
     cors({
-      origin: "igfullstack.com.br",
+      // origin: "igfullstack.com.br",
     })
   );
   app.use(bodyParser.urlencoded({ extended: true }));
