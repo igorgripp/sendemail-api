@@ -6,7 +6,7 @@ module.exports = () => {
   const app = express();
   app.use(
     cors({
-      origin: "https://sendemail-igfullstack.herokuapp.com/",
+      origin: "igfullstack.com.br",
     })
   );
   app.use(bodyParser.urlencoded({ extended: true }));
