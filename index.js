@@ -33,7 +33,7 @@ app.post("/send", (req, res) => {
     subject: email.subject,
     text: 'Cliente: ' + email.yourname + 
           '\nTelefone: ' + email.yourphone +
-          '\nMensagem: ' + email.message,
+          '\nMensagem: ' + email.yourmessage
   }).then(info => {
     res.send(info);
   }).catch(err => {
