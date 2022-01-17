@@ -17,8 +17,6 @@ app.get("/", (req, res) => {
 
 app.post("/send", (req, res) => {
 
-  res.header("Access-Control-Allow-Origin", "*");
-
   const email = req.body;
 
   const transporter = nodemailer.createTransport({
